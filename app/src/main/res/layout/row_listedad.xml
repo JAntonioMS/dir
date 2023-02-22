@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listedadRowModel" type="com.carlosabrahammenndezilhuicatzisapplication.app.modules.calculadoraderiesgo.data.model.ListedadRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowedad"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <FrameLayout android:id="@+id/frameStackedad"
+            android:layout_height="@dimen/_76pxv" android:layout_width="@dimen/_100pxh">
+            <LinearLayout android:id="@+id/linearColumnedad"
+                android:layout_gravity="bottom|start"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylewhite_A700">
+                <TextView android:ellipsize="end"
+                    android:gravity="start" android:id="@+id/txtEdad"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_5pxv"
+                    android:layout_marginEnd="@dimen/_12pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{listedadRowModel.txtEdad}"
+                    style="@style/txtBaloo2regular20_2" tools:text="@string/lbl_edad"/>
+            </LinearLayout>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtEdadOne"
+                android:layout_gravity="top|start"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_4pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{listedadRowModel.txtEdadOne}"
+                style="@style/txtBaloo2regular20" tools:text="@string/lbl_edad2"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/frameStackpesokg"
+            android:layout_height="@dimen/_76pxv"
+            android:layout_marginStart="@dimen/_14pxh"
+            android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_103pxh">
+            <LinearLayout android:id="@+id/linearColumnpesokg"
+                android:layout_gravity="bottom|start"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylewhite_A700">
+                <TextView android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/txtPesoKg"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_4pxv"
+                    android:layout_marginEnd="@dimen/_12pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_marginTop="@dimen/_6pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{listedadRowModel.txtPesoKg}"
+                    style="@style/txtBaloo2regular20_2" tools:text="@string/lbl_peso_kg"/>
+            </LinearLayout>
+            <TextView android:ellipsize="end" android:id="@+id/txtPeso"
+                android:layout_gravity="top|start"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{listedadRowModel.txtPeso}"
+                style="@style/txtBaloo2regular20" tools:text="@string/lbl_peso"/>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

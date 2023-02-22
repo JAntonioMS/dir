@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listlanguageRowModel" type="com.carlosabrahammenndezilhuicatzisapplication.app.modules.consultarresultadossi.data.model.ListlanguageRowModel"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnlanguage"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_300_cccornerRadius">
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtLanguage"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_15pxv"
+            android:layout_width="match_parent"
+            android:text="@{listlanguageRowModel.txtLanguage}"
+            style="@style/txtBaloo2regular20" tools:text="@string/msg_resultados_insu"/>
+        <LinearLayout android:gravity="center_vertical"
+            android:id="@+id/linearRowrectanglefourteen"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_8pxv"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_1pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <FrameLayout android:id="@+id/frameStackrectanglefourteen"
+                android:layout_height="@dimen/_33pxv"
+                android:layout_marginBottom="@dimen/_1pxv" android:layout_width="@dimen/_99pxh">
+                <View android:background="@color/pink_900"
+                    android:id="@+id/viewRectangleFourteen"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_33pxv"
+                    android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_99pxh"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtVer"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_marginEnd="@dimen/_34pxh"
+                    android:layout_marginStart="@dimen/_35pxh"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{listlanguageRowModel.txtVer}"
+                    style="@style/txtBaloo2regular20_1" tools:text="@string/lbl_ver"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/frameStackrectanglefifteen"
+                android:layout_height="@dimen/_33pxv"
+                android:layout_marginStart="@dimen/_24pxh"
+                android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_99pxh">
+                <View android:background="@color/pink_900"
+                    android:id="@+id/viewRectangleFifteen"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_33pxv"
+                    android:layout_marginBottom="@dimen/_1pxv" android:layout_width="@dimen/_99pxh"/>
+                <TextView android:ellipsize="end"
+                    android:gravity="top|start"
+                    android:id="@+id/txtEnviar"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_22pxh"
+                    android:layout_marginStart="@dimen/_23pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{listlanguageRowModel.txtEnviar}"
+                    style="@style/txtBaloo2regular20_1" tools:text="@string/lbl_enviar"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
